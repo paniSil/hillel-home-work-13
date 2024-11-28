@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Homework 13</title>
+</head>
+
+<body class="body-display">
+  <main class="main-container">
+
+    <!-- Square -->
+    <svg width="200" height="200">
+      <rect x="10" y="10" width="180" height="180" fill="teal" stroke="aqua" fill-opacity=0.8 stroke-width="8">
+        <animate attributeName="width" begin="0s" dur="3s" from="180" to="30" repeatCount="indefinite" />
+        <animate attributeName="height" begin="0s" dur="3s" from="180" to="30" repeatCount="indefinite" />
+        <animate attributeName="stroke-width" begin="0s" dur="3s" from="8" to="1" repeatCount="indefinite" />
+        <animate attributeName="fill" begin="0s" dur="3s" from="teal" to="blue" repeatCount="indefinite" />
+      </rect>
+    </svg>
+
+    <!-- Circle -->
+    <svg width="200" height="200" viewbox="0 0 400 400">
+      <circle cx="100" cy="100" r="45" fill="lime" stroke="olive" fill-opacity=0.4 stroke-width="4">
+        <animate attributeName="r" begin="0s" dur="1s" from="45" to="80" repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" begin="0s" dur="1s" from="1" to="0.01" repeatCount="indefinite" />
+        <animate attributeName="stroke-opacity" begin="0s" dur="1s" from="1" to="0.01" repeatCount="indefinite" />
+      </circle>
+    </svg>
+
+    <!-- Rectangle with hover -->
+    <svg class="svg" width="200" height="200">
+      <rect class="rectangle" x="10" y="40" rx="15" width="180" height="120px" />
+      <text class="hover-text" x="68" y="105" fill="violet">HOVER!</text>
+    </svg>
+
+    <!-- Ellipse with hover -->
+    <svg class="svg">
+      <ellipse class="ellipse" cx="160" cy="50" rx="120" ry="45" />
+    </svg>
+
+    <!-- Cube made with polygons and gradients-->
+    <svg height="280" width="360">
+      <polygon points="150,15 258,77 258,202 150,265 42,202 42,77" fill="url(#gradient1)" />
+      <polygon points="150,15 258,77 150,144 42,77" fill="crimson" />
+      <polygon points="150,144 258,77 258,202 150,265" fill="url(#gradient2)" />
+      <defs>
+        <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(255, 141, 141); stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: white; stop-opacity: 1" />
+        </linearGradient>
+        <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(231, 71, 71); stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: rgb(255, 195, 195); stop-opacity: 1" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+  </main>
+</body>
+
+</html>
